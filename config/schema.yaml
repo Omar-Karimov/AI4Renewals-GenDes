@@ -1,0 +1,70 @@
+columns:
+  - CustomerID: category
+  - Country: category
+  - user_education: category
+  - Gender: category
+  - UsesAdvancedFeatures: category
+  - AppEngagementSeconds: int
+  - LastLoginDaysAgo: int
+  - Profession: category
+  - SubscriptionType: category
+  - UsesVR: category
+  - RenewSubscription: category
+  - Age: int
+  - DesignProjectScale: category
+  - NumberOfDesigns: int
+  - TutorialProgressionType: category
+  - FrequencyOfDesignToolUsage: category
+  - CustomerSupportCall: category
+
+numerical_columns:
+  - AppEngagementSeconds
+  - LastLoginDaysAgo
+  - Age
+  - NumberOfDesigns
+
+categorical_columns:
+  - CustomerID
+  - Country
+  - user_education
+  - Gender
+  - UsesAdvancedFeatures
+  - Profession
+  - SubscriptionType
+  - UsesVR
+  - RenewSubscription
+  - DesignProjectScale
+  - TutorialProgressionType
+  - FrequencyOfDesignToolUsage
+  - CustomerSupportCall
+
+drop_columns:
+  - CustomerID
+  - AppEngagementSeconds
+  - UsesAdvancedFeatures
+
+# For Data Transformation
+num_features:
+  - LastLoginDaysAgo
+  - Age
+  - NumberOfDesigns
+  - AppEngagementMinutes
+
+or_columns:
+  - user_education
+  - DesignProjectScale
+  - FrequencyOfDesignToolUsage
+  - SubscriptionType
+  - TutorialProgressionType
+  - IsActive
+  - CustomerSupportCall
+  - Gender
+  - UsesVR
+
+oh_columns:
+  - Country
+  - Profession
+
+transform_columns:
+  - AppEngagementMinutes
+  - LastLoginDaysAgo
