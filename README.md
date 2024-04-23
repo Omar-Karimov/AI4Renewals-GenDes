@@ -35,8 +35,10 @@ The dataset is a fabricated representation of user interactions and subscription
 
 
 ## Project Structure
+
 The project is structured as follows:
 
+```bash
 AI4RENEWALS-GENDES
 │
 ├── .github/workflows
@@ -101,7 +103,7 @@ AI4RENEWALS-GENDES
 ├── requirements.txt
 ├── setup.py
 └── template.py
-
+```
 ## Components
 
 ### Data Ingestion
