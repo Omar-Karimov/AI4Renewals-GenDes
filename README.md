@@ -344,6 +344,8 @@ export AWS_SECRET_ACCESS_KEY="<Your_AWS_Secret_Access_Key>"
 
 - Ensure MongoDB and AWS services are properly configured before running the application:
 
+![CI/CD](Designs/app.png)
+
 ```bash
 python app.py
 ```
