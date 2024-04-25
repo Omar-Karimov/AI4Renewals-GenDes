@@ -342,13 +342,20 @@ export AWS_SECRET_ACCESS_KEY="<Your_AWS_Secret_Access_Key>"
 
 4. **Running the Application**
 
-- Ensure MongoDB and AWS services are properly configured before running the application:
+- Ensure MongoDB and AWS services are properly configured before running the application
+- To utilize the GenDes application effectively, follow these steps:
 
-![CI/CD](Designs/app.png)
+Begin by running the `demo.py` script. This will train the model and automatically upload the trained model to an AWS S3 bucket for storage and future retrieval.
+
+```bash
+python demo.py
+```
 
 ```bash
 python app.py
 ```
+
+![CI/CD](Designs/app.png)
 
 ## AWS CI/CD Deployment with GitHub Actions
 
